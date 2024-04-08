@@ -1,0 +1,76 @@
+nav a {
+	color: lightgreen;
+	font-weight: 700;
+}
+
+nav a:visited {
+	color: magenta;
+}
+
+nav a:hover {
+	color: darkmagenta;
+}
+
+html, body{
+	font-family: calibri;
+	width: 100%;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: calibri;
+	width: 100%;
+	transition: 0.5s ease-in-out;
+	z-index: 999;
+
+	padding: 3px 5vw;
+
+	background-color: rgba(230, 230, 230);
+
+	position: fixed;
+	top: 0;
+}
+
+nav ul {
+	list-style: none;
+	padding: 1px;
+	width: 100%;
+
+	font-size: 19px;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+nav h1 {
+	/* font-family: "Centruy Gothic",arial; */
+
+	font-size: 30px;
+	white-space: nowrap;
+}
+
+nav ul li {
+	white-space: nowrap;
+	margin: 2vh 2vw;
+}
+
+
+
+
+
+/* Footer */
+
+
+footer {
+	width: 100%;
+	padding: 10px;
+
+	color: royalblue;
+	font-size: 19px;
+
+	text-align: center;
+}
+

@@ -1,0 +1,77 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html, body{
+	font-family: calibri;
+	font-size: 18px;
+
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size : cover;
+}
+
+a {
+	text-decoration: none ;
+}
+
+#top-section h2:first-child {
+	text-align: center;
+	margin: 5px;
+}
+
+#top-section h2:nth-child(2) {
+	font-weight: 500;
+	margin: 1vw 0;
+	color: royalblue;
+}
+
+strong {
+	margin: 25px 2vw;
+}
+
+#Protagon {
+	background-color: lightgrey;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+form .normal {
+	display: flex;
+	align-content: center;
+	justify-content: space-evenly;
+
+	margin: 10px 0;
+}
+
+form .out {
+	background-color: lightgrey;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+form .out div {
+	display: flex;
+	align-content: center;
+	justify-content: space-evenly;
+
+	margin: 10px 0;
+}
+
+form input {
+	font-size: 16px;
+	border-radius: 4px;
+	height: 25px;
+}
+
+form button {
+	padding: 2px;
+	margin: 15px;
+	font-size: 16px;
+}
+
+main {	
+	margin: 80px 4vw 20px 4vw;
+}

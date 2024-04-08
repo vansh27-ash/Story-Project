@@ -1,0 +1,48 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none ;
+}
+
+html, body{
+	font-family: calibri;
+	font-size: 18px;
+	overflow-x: hidden;
+}
+
+h1 {
+	font-size: 30px;
+	text-align: center;
+	margin: 40px;
+	text-shadow: 1px 1px 2px grey;
+}
+
+#desc {
+	background-color: rgba(220, 220, 20, 0.6);
+	border-radius: 8px;
+	margin: 1vh 3vw;
+	padding: 1vw 2vw;
+}
+
+p {
+	background: linear-gradient(30deg, rgba(150,100,10,1) , rgba(100,179,110,1) );
+	border-radius: 8px;
+	margin: 3vw;
+	padding: 2vw;
+	line-height: 1.5;
+}
+
+#svg-img-5 {
+	height: 900px;
+
+	position: absolute;
+	top:-670px;
+	right: 430px;
+	opacity: 0.6;
+	z-index: -1;
+}
+

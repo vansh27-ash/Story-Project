@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	{% load static %}
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> About us </title>
+	<link rel="stylesheet" href="{% static 'css\nav_footer.css' %}">
+	<link rel="stylesheet" href="{% static 'css\about_us.css' %}">
+</head>
+<body>
+
+	<header>
+			
+			<nav>
+				<h1><a href="{% url 'Home' %}"> Our Site </a></h1>
+				<ul>
+					<li><a href="{% url 'CreateStory' %}"> Create Story </a></li>
+					<li><a href="{% url 'AboutUs' %}"> About us </a></li>
+				</ul>
+			</nav>
+
+	</header>
+
+	<main>
+	
+		<h2> About Us </h2>
+
+		<span>Description : ......................
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet sagittis odio, ac suscipit justo volutpat nec. Mauris tincidunt purus at luctus congue. Nulla facilisi. Morbi blandit, diam nec tempor imperdiet, diam lectus viverra ipsum, ac semper urna dolor porttitor lacus. Nulla facilisi. Ut convallis, erat quis egestas iaculis, erat metus commodo lacus, tincidunt efficitur risus mi at velit. Phasellus at pellentesque justo. Maecenas finibus dictum neque, id pharetra ipsum pulvinar vel. Integer ut feugiat eros.
+		</span>
+
+	</main>
+
+	<footer>
+		<p>All &copy; Copyrights are reserved by Project Simulation Group</p>
+	</footer>
+	
+</body>
+</html>

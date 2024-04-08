@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% load static %}
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Story creator</title>
+		<link rel="stylesheet" href="{% static 'css\create_post.css' %}">
+	</head>
+	<body>
+		
+		<header>
+			
+			<nav>
+				<h1><a href="{% url 'Home' %}"> Our Site </a></h1>
+				<ul>
+					<li><a href="{% url 'CreateStory' %}"> Create Story </a></li>
+					<li><a href="{% url 'AboutUs' %}"> About us </a></li>
+				</ul>
+			</nav>
+
+		</header>
+
+		<main>
+
+			<div id="top-section" >
+				<h2>Let's make a Story !!!</h2>
+				<h2>Select the entries below to create your own story :- </h2>
+
+				<form action="{% url 'ShowMyStory' %}" method="get" >
+		            <Strong>
+		                You can leave the entries empty and submit to be autofilled by server
+		            </Strong>
+					<br><br>
+
+			        <p id="Protagon" >Enter Protagonist Name <input type="text" name="Protagon_Name"></p>
+			        <br><br>
+	
+					<p> Enter Colours names :- </p>
+			        <div class="normal">
+			            <p> 1st Colour <input type="text" name="Colour1"></input></p>
+			            <p> 2nd Colour <input type="text" name="Colour2"></input></p>
+			            <p> 3rd Colour <input type="text" name="Colour3"></input></p>
+			        </div><br>
+
+			        <div class="out">
+				        <p> Enter animals name :- </p>
+				        <div>
+					        <p> 1st Animal <input type="text" name="animal1"></p>
+					        <p> 2nd Animal <input type="text" name="animal2"></p>
+					        <p> 3rd Animal <input type="text" name="animal3"></p>
+				    	</div><br>
+					</div>
+
+			    	<p> Enter words related to weather :- </p>
+			        <div class="normal">
+			        	<p> 1st Word <input type="text" name="weather1"></p>
+			        	<p> 2nd Word <input type="text" name="weather2"></p>
+			        	<p> 3rd Word <input type="text" name="weather3"></p>
+			    	</div><br>
+
+			    	<div class="out">
+				    	<p> Enter names of some places :- </p>
+				    	<div>
+					        <p> 1st Place <input type="text" name="place1"></p>
+					        <p> 2nd Place <input type="text" name="place2"></p>
+					        <p> 3rd Place <input type="text" name="place3"></p>
+					    </div><br>
+					</div>
+
+				    <p> Enter the names of countries :- </p> 
+			        <div class="normal">
+			            <p> 1st Country <input type="text" name=Country1></p>
+			            <p> 2nd Country <input type="text" name=Country2></p>
+			            <p> 3rd Country <input type="text" name=Country3></p>
+			        </div><br>
+
+			        <div class="out">
+				        <p> Enter the names of Monuments :- </p>
+				        <div>
+				            <p> 1st Monument <input type="text" name="monument1"></p>
+				            <p> 2nd Monument <input type="text" name="monument2"></p>
+				            <p> 3rd Monument <input type="text" name="monument3"></p>
+				        </div><br>
+				    </div>
+
+			        <p> Enter the names of Food Items :- </p>
+			        <div class="normal">
+			            <p> 1st Food Item <input type="text" name="food1"></p>
+			            <p> 2nd Food Item <input type="text" name="food2"></p>
+			            <p> 3rd Food Item <input type="text" name="food3"></p>
+			        </div><br>
+
+			        <div class="out">
+				        <p> Enter the names of Sweet Dishs :- </p>
+				        <div>
+				            <p> 1st Sweet Dish <input type="text" name="sweet1"></p>
+				            <p> 2nd Sweet Dish <input type="text" name="sweet2"></p>
+				            <p> 3rd Sweet Dish <input type="text" name="sweet3"></p>
+				        </div><br>
+				    </div>
+
+			        <p> Enter the names of Household Items :- </p>
+			        <div class="normal">
+			            <p> 1st Household Item <input type="text" name="household1"></p>
+			            <p> 2nd Household Item <input type="text" name="household2"></p>
+			            <p> 3rd Household Item <input type="text" name="household3"></p>
+			        </div><br>
+
+			        <div class="out">
+				        <p> Enter the words related to sounds :- </p>
+				        <div>
+				            <p> 1st Word <input type="text" name="sound1"></p>
+				            <p> 2nd Word <input type="text" name="sound2"></p>
+				            <p> 3rd Word <input type="text" name="sound3"></p>
+				        </div><br>
+				    </div>
+
+			        <button type="submit">Submit</button>
+			    </form>
+
+			</div>
+
+		</main>
+
+<!-- 		<footer>
+			<p>All &copy; Copyrights are reserved by Project Simulation Group</p>
+		</footer> -->
+
+	</body>
+</html>

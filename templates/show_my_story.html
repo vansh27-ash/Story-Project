@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<meta charset="utf-8">
+	<title> Your Post </title>
+	<link rel="stylesheet" href="{% static 'css\post_read.css' %}">
+</head>
+<body>
+
+	<img id="svg-img-5" src="{% static 'svgs\svg5.svg' %}" />
+
+	<h1> Welcome to the Story </h1>
+
+      <div id="desc" >
+            <h3> Story name : Jungle Book </h3>
+            <h3> Story writter : {% if creator %}{{ creator }}{% else %} abc {% endif %}</h3>
+      </div>
+
+	<p>
+		    {{the_unknown_story}}
+		<br>
+		    {{vacations}}
+		<br>
+		    {{first_day_school}}
+		<br>
+		    {{summer_trip}}
+		<br>
+		    {{pizza}}
+		<br>
+		    {{alice}}
+		<br>
+		    {{giraffe}}
+		<br>
+		    {{three_little_pigs}}
+		<br>
+		    {{pri_for_a_day}}
+		<br>
+		    {{very_brave_adv}}
+	</p>
+	
+</body>
+</html>

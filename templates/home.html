@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	{% load static %}
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Index Page </title>
+	<link rel="stylesheet" href="{% static 'css\index_style.css' %}">
+	<link rel="stylesheet" href="{% static 'css\nav_footer.css' %}">
+</head>
+<body>
+
+	<header>
+		
+		<nav>
+			<h1> Our Site </h1>
+			<ul>
+				<li><a href="{% url 'CreateStory' %}"> Create Story </a></li>
+				<li><a href="{% url 'AboutUs' %}"> About us </a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+		<img id="svg-img-1" src="{% static 'svgs\svg1.svg' %}" />
+		<img id="svg-img-2" src="{% static 'svgs\svg2.svg' %}" />
+		<img id="svg-img-3" src="{% static 'svgs\svg3.svg' %}" />
+		<img id="svg-img-4" src="{% static 'svgs\svg4.svg' %}" />
+
+	<main>
+
+		<div id="top-left">
+			<div>
+				<h1> Welcome to story maker and viewer. </h1>
+				<p id="small-desc" > This website helps you to create you own stories, so enjoy it . </p>
+			</div>
+			<h4 id="stories-heading" >Story examples : </h4>
+         
+			<p>ONCE UPON A TIME a girl named Cinderella lived with her stepmother and two stepsisters.Poor Cinderella had to work hard all day long .........
+			<a href="{% url 'Exp1' %}">Read more</a></p>
+
+			<p>There once was a poor farm girl named Philippa who had nothing in this great big world other than a tiny plot of grass ......... <a href="{% url 'Exp2' %}">Read more</a></p>
+		</div>
+
+		<div id="top-right" >
+			<img src="{% static 'images\content_creator.png' %}" alt="Image" />
+		</div>
+
+	</main>
+
+	<footer>
+		<p>All &copy; Copyrights are reserved by Project Simulation Group</p>
+	</footer>
+	
+</body>
+</html>

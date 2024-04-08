@@ -1,0 +1,170 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none ;
+	font-weight: 600;
+}
+
+
+
+/* Main */
+
+
+
+
+main {	
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+
+	margin: 80px 4vw 20px 4vw;
+	font-size: 20px;
+}
+
+#top-left {
+	/* background-color: limegreen; */
+
+	width: 48%;
+	padding: 40px 5px;
+	min-height: 75vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+
+	transition: 0.5s ease-in-out;
+	transform: translateZ(0);
+	/* transform: rotateZ(-360deg); */
+}
+
+#top-left h1 {
+	text-align: center;
+	font-size: 40px;
+}
+
+#small-desc {
+	text-align: center;
+	color: grey;
+}
+
+#top-left p {
+	font-size: 18px;
+	/* transition: 1s ease; */
+}
+
+#stories-heading {
+	font-size: 25px;
+	margin: 10px;
+}
+
+#top-right {
+	min-height: 75vh;
+	width: 48%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#top-right img {
+	width: 90%;
+	padding: 4px;
+	opacity: 0.9;
+}
+
+
+
+
+/* Svg */
+
+
+
+#svg-img-1 {
+	position: absolute;
+	top: 20px;
+	left: -30px;
+	opacity: 0.8;
+	z-index: -1;
+}
+
+#svg-img-2 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	opacity: 0.8;
+	z-index: -1;
+}
+
+#svg-img-3 {
+	position: absolute;
+	top: 20%;
+	right: 50%;
+	z-index: -3;
+	opacity: 0.3;
+}
+
+#svg-img-4 {
+	position: absolute;
+	top: 20%;
+	right: 56%;
+	opacity: 0.5;
+	z-index: -2;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+
+	main {	
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+
+		margin: 80px 2vw 10px 2vw;
+		font-size: 20px;
+	}
+
+	#svg-img-2 {
+		position: absolute;
+		bottom: -300px;
+		right: 0;
+		opacity: 0.8;
+		z-index: -1;
+	}
+
+	#top-left {
+		/* background-color: limegreen; */
+
+		width: 80%;
+		padding: 5px;
+		min-height: 500px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+
+		transition: 0.5s ease-in-out;
+		transform: translateZ(0);
+		/* transform: rotateZ(-360deg); */
+	}
+
+	#top-right {
+		min-height: 500px;
+		width: 90%;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+}
